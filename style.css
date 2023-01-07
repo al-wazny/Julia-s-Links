@@ -1,0 +1,51 @@
+body {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/mobile-background.jpg');
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color: rgba(255, 255, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+main > img {
+    height: 5.5rem;
+    width: auto;
+    margin-bottom: .75rem;
+}
+
+main > .social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+main > .social-links > a {
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: red;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: .5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* @media only screen and (max-width: 767px) {
+    body {
+        background-image: url('images/mobile-background.jpg');
+    }
+} */
+
+/* 390px media query to do a line break */
