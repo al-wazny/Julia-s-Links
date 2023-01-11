@@ -13,32 +13,37 @@
 </head>
 <body>
     <main>
-        <nav class="navbar">
-            <div class="navbar-container container">
-                <input type="checkbox" name="" id="">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <ul class="menu-items">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-        </nav>
         <div class="canvas">
             <h1>Find me here, Bitches!</h1>
-            <ul class="social-links">
-                <li><a href="https://www.instagram.com/julia.izabella/?hl=de">Instagram</a></li>
-                <li><a href="https://de-de.facebook.com/julia.izabella.7/">Facebook</a></li>
-                <li><a href="https://www.tiktok.com/@juliaizabellaa?lang=de-DE">TikTok</a></li>
-                <li><a href="mailto: tattoo@juliaizabella.de">appointment anfragen</a></li>
-            </ul>
-            <div class="logo-container">
-                <a href="/blub"><div class="logo"></div></a>
-            </div> 
+            <section class="links">
+                <ul class="social-links">
+                    <li class="scale"><a href="https://www.instagram.com/julia.izabella/?hl=de">Instagram</a></li>
+                    <li class="scale"><a href="https://de-de.facebook.com/julia.izabella.7/">Facebook</a></li>
+                    <li class="scale"><a href="https://www.tiktok.com/@juliaizabellaa?lang=de-DE">TikTok</a></li>
+                    <li class="scale"><a href="mailto: tattoo@juliaizabella.de">Appointment request</a></li>
+                </ul>
+                <div class="logo-container">
+                    <a href="https://www.amazon.de/hz/wishlist/ls/24M8GWPIEH1GW?ref_=wl_share"><div class="logo"></div></a>
+                </div>
+            </section>
         </div>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <aside>
+                    <input type="checkbox" name="burgerMenu" onclick="handleClick(this);">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="menu-items">
+                        <li><a class="routes" href="#home">Home</a></li>
+                        <li><a class="routes" href="#about">About</a></li>
+                        <li><a class="routes" href="#about">My Art</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </nav>
     </main>
 </body>
 </html>
