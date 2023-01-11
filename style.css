@@ -102,6 +102,38 @@ main .social-links  a {
     mask: url(amazon.svg) no-repeat center;
 }
 
+main .image-grid ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+main .image-grid ul img {
+  height: auto;
+}
+
+.big1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+}
+
+.big2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  display: flex;
+}
+
+.blub > img {
+  height: 100%;
+
+}
+
 @media (max-width: 768px) {
   .navbar aside > {
     opacity: 0.98;
@@ -232,21 +264,4 @@ main .social-links  a {
   .navbar > .navbar-container aside input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
       transform: rotate(-28deg);
   }
-
-  .animation {
-    position: relative;
-    animation-name: open;
-    animation-duration: .5s;  
-    animation-fill-mode: forwards;
-  }
-}
-
-@keyframes open {
-  from {z-index: 0}
-  to {z-index: -1;  color: #847cae;}
-}
-
-@keyframes close {
-  from {z-index: -1}
-  to {z-index: 0}
 }
