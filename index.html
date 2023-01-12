@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <title>Julia's social Links</title>
 </head>
-<body>
+<body id="home-page">
     <main>
         <div class="canvas">
             <h1>Find me here, Bitches!</h1>
@@ -27,23 +27,30 @@
                 </div>
             </section>
         </div>
+
         <nav class="navbar">
-            <div class="navbar-container container">
-                <aside>
-                    <input type="checkbox" name="burgerMenu" onclick="handleClick(this);">
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>
-                    <ul class="menu-items">
-                        <li><a class="routes" href="#home">Home</a></li>
-                        <li><a class="routes" href="#about">About</a></li>
-                        <li><a class="routes" href="#about">My Art</a></li>
-                    </ul>
-                </aside>
+            <div class="box">
+                <div class="btn not active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </nav>
+            <ul class="menu-items">
+                <li><a class="routes" href="./index.html">Home</a></li>
+                <li><a class="routes" href="./about.html">About</a></li>
+                <li><a class="routes" href="./my-art.html">My Art</a></li>
+            </ul>
+        </div>
     </main>
 </body>
+<script>
+    var btn = document.getElementsByClassName('btn')[0];
+    var menu = document.getElementsByClassName('menu-items')[0];
+
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('not');
+        menu.classList.toggle('open');
+    });
+</script>
 </html>
