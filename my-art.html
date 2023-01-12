@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>My Art</title>
 </head>
-<body>
+<body id="art-page">
     <main>
         <div class="image-grid">
             <ul>
@@ -26,28 +26,34 @@
                 <li class="big2 blub"><img src="./images/image2.jpeg"></li>
                 <li><img src="./images/image3.jpeg"></li>
                 <li><img src="./images/image3.jpeg"></li>
+                <li><img src="./images/image3.jpeg"></li>
+                <li><img src="./images/image3.jpeg"></li>
+                <li><img src="./images/image1.jpeg"></li>
             </ul>
         </div>
         <nav class="navbar">
-            <div class="navbar-container container">
-                <aside>
-                    <input type="checkbox" name="burgerMenu" onclick="handleClick(this);">
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>
-                    <ul class="menu-items">
-                        <li><a class="routes" href="#home">Home</a></li>
-                        <li><a class="routes" href="#about">About</a></li>
-                        <li><a class="routes" href="#about">My Art</a></li>
-                    </ul>
-                </aside>
+            <div class="box">
+                <div class="btn not active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </nav>
+            <ul class="menu-items">
+                <li><a class="routes" href="./index.html">Home</a></li>
+                <li><a class="routes" href="./about.html">About</a></li>
+                <li><a class="routes" href="./my-art.html">My Art</a></li>
+            </ul>
+        </div>
     </main>
 </body>
 <script>
+    var btn = document.getElementsByClassName('btn')[0];
+    var menu = document.getElementsByClassName('menu-items')[0];
 
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('not');
+        menu.classList.toggle('open');
+    });
 </script>
 </html>
