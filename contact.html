@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form > input {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="contact">
+            <form action="./contact.php" method="post">
+                <label for="name">Vorname, Nachname</label>
+                <input type="text" name="name" id="name">
+                <label for="email">email adresse</label>
+                <input type="email" name="email" id="email">
+                <label for="tel">telefon nummer</label>
+                <input type="tel" name="tel" id="tel">
+                <label for="body-part">Körperstelle</label>
+                <input type="text" name="body-part" id="body-part">
+                <label for="size">größe des motives in cm</label>
+                <input type="number" name="size" id="size">
+                <label for="motive">Beschreibung des gewünschten motives</label>
+                <textarea name="motive" id="motive" cols="30" rows="10"></textarea>
+                <ul>
+                    <li>
+                        <label for="dienstag">Dienstag</label>
+                        <input type="checkbox" name="" id="dienstag">
+                    </li>
+                    <li>
+                        <label for="mittwoch">Mittwoch</label>
+                        <input type="checkbox" name="" id="mittwoch">
+                    </li>
+                    <li>
+                        <label for="donnerstag">Donnerstag</label>
+                        <input type="checkbox" name="" id="donnerstag">
+                    </li>
+                    <li>
+                        <label for="freitag">Freitag</label>
+                        <input type="checkbox" name="" id="freitag">
+                    </li>
+                    <li>
+                        <label for="samstag">Samstag</label>
+                        <input type="checkbox" name="" id="samstag">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+
+                        <label for="schwarz">Schwarz</label>
+                        <input type="radio" name="color" id="schwarz">
+                    </li>
+                    <li>
+                        <label for="farbig">Farbig</label>
+                        <input type="radio" name="color" id="farbig">
+                    </li>
+                </ul>
+                <input type="file" name="file" id="file">
+                <button type="submit">Um termin bitten</button>
+            </form>
+        </div>
+        <nav class="navbar">
+            <div class="box">
+                <div class="btn not active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="menu-items">
+                <li><a class="routes" href="./index.html">Home</a></li>
+                <li><a class="routes" href="./about.html">About</a></li>
+                <li><a class="routes" href="./my-art.html">My Art</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+<script>
+    var btn = document.getElementsByClassName('btn')[0];
+    var menu = document.getElementsByClassName('menu-items')[0];
+
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('not');
+        menu.classList.toggle('open');
+    });
+</script>
+</html>
