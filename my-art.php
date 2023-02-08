@@ -31,29 +31,7 @@
                 <li><img src="./images/image1.jpeg"></li>
             </ul>
         </div>
-        <nav class="navbar">
-            <div class="box">
-                <div class="btn not active">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <ul class="menu-items">
-                <li><a class="routes" href="./index.html">Home</a></li>
-                <li><a class="routes" href="./about.html">About</a></li>
-                <li><a class="routes" href="./my-art.html">My Art</a></li>
-            </ul>
-        </div>
+        <?php include("./navigation.html"); ?>
     </main>
 </body>
-<script>
-    var btn = document.getElementsByClassName('btn')[0];
-    var menu = document.getElementsByClassName('menu-items')[0];
-
-    btn.addEventListener('click', () => {
-        btn.classList.toggle('not');
-        menu.classList.toggle('open');
-    });
-</script>
 </html>

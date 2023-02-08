@@ -7,17 +7,43 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
+        main {
+            background-color: black;
+        }
+        #contact main h1 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding-top: 3rem;
+        }
+        .contact {
+            color: white;
+        }
         form {
             display: flex;
             flex-direction: column;
+            padding: 2rem;
         }
         form > input {
             margin-bottom: 1rem;
         }
+        form > ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        form .inspiration {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        form button {
+            height: 2rem;
+            font-size: 1rem;
+            border-radius: 20px;
+        }
     </style>
 </head>
-<body>
+<body id="contact">
     <main>
+        <h1>Termin anfragen</h1>
         <div class="contact">
             <form action="./contact.php" method="post">
                 <label for="name">Vorname, Nachname</label>
@@ -34,64 +60,44 @@
                 <textarea name="motive" id="motive" cols="30" rows="10"></textarea>
                 <ul>
                     <li>
-                        <label for="dienstag">Dienstag</label>
                         <input type="checkbox" name="" id="dienstag">
+                        <label for="dienstag">Dienstag</label>
                     </li>
                     <li>
-                        <label for="mittwoch">Mittwoch</label>
                         <input type="checkbox" name="" id="mittwoch">
+                        <label for="mittwoch">Mittwoch</label>
                     </li>
                     <li>
-                        <label for="donnerstag">Donnerstag</label>
                         <input type="checkbox" name="" id="donnerstag">
+                        <label for="donnerstag">Donnerstag</label>
                     </li>
                     <li>
-                        <label for="freitag">Freitag</label>
                         <input type="checkbox" name="" id="freitag">
+                        <label for="freitag">Freitag</label>
                     </li>
                     <li>
-                        <label for="samstag">Samstag</label>
                         <input type="checkbox" name="" id="samstag">
+                        <label for="samstag">Samstag</label>
                     </li>
                 </ul>
                 <ul>
                     <li>
 
-                        <label for="schwarz">Schwarz</label>
                         <input type="radio" name="color" id="schwarz">
+                        <label for="schwarz">Schwarz</label>
                     </li>
                     <li>
-                        <label for="farbig">Farbig</label>
                         <input type="radio" name="color" id="farbig">
+                        <label for="farbig">Farbig</label>
                     </li>
                 </ul>
+                <a class="inspiration" href="./my-art.php">Brauchst du inspiration? klick hier!</a>
+                <label for="file">Kannst auch selbst gemachte motive schicken!</label>
                 <input type="file" name="file" id="file">
                 <button type="submit">Um termin bitten</button>
             </form>
         </div>
-        <nav class="navbar">
-            <div class="box">
-                <div class="btn not active">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <ul class="menu-items">
-                <li><a class="routes" href="./index.html">Home</a></li>
-                <li><a class="routes" href="./about.html">About</a></li>
-                <li><a class="routes" href="./my-art.html">My Art</a></li>
-            </ul>
-        </div>
+        <?php include("./navigation.html"); ?>
     </main>
 </body>
-<script>
-    var btn = document.getElementsByClassName('btn')[0];
-    var menu = document.getElementsByClassName('menu-items')[0];
-
-    btn.addEventListener('click', () => {
-        btn.classList.toggle('not');
-        menu.classList.toggle('open');
-    });
-</script>
 </html>

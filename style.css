@@ -12,8 +12,9 @@
 }
 
 body {
-
     margin: 0;
+    height: 100vh;
+    font-family: 'roboto';
 }
 
 #home-page {
@@ -220,7 +221,6 @@ main .social-links  a {
     -webkit-mask: url(amazon.svg) no-repeat center;
     mask: url(amazon.svg) no-repeat center;
 }
-
 
 main .image-grid ul {
   list-style: none;
