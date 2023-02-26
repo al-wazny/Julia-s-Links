@@ -31,7 +31,7 @@
                 <li><img src="./images/image1.jpeg"></li>
             </ul>
         </div>
-        <?php include("./navigation.html"); ?>
     </main>
+    <?php include("./navigation.html"); ?>
 </body>
 </html>

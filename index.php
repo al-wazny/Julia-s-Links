@@ -27,7 +27,7 @@
                 </div>
             </section>
         </div>
-        <?php include("./navigation.html"); ?>
     </main>
+    <?php include("./navigation.html"); ?>
 </body>
 </html>
