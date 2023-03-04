@@ -112,7 +112,7 @@ main > .navbar {
 
 .box {
   border-radius: 20px;
-  position: absolute;
+  position: absolute; /* change it to fixed if needed */
   top: 2rem;
   right: 2rem;
   width: 8rem;

@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+    folder structure
+    remove burger menu animation when a page is done loading
+    side nav underline animation
+    send an email to julia when contact form is send
 </body>
 </html>
