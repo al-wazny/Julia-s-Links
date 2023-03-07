@@ -32,6 +32,6 @@
             </ul>
         </div>
     </main>
-    <?php include("./navigation.html"); ?>
+    <?php include("./pagelets/navigation.php"); ?>
 </body>
 </html>

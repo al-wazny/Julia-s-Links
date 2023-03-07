@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'old_english';
-    src: url('MagnificChaosPersonalUseRegular-x3J88.ttf') format('truetype');
+    src: url('../font/MagnificChaosPersonalUseRegular-x3J88.ttf') format('truetype');
 }
 
 .scale {
@@ -32,7 +32,7 @@ main > div {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('images/mobile-background.jpg');
+  background-image: url('../images/mobile-background.jpg');
   height: 100vh;
 }
 
@@ -231,8 +231,8 @@ main .social-links  a {
 .logo {
     background-color: #6f107a;
     height: 4.5rem;
-    -webkit-mask: url(amazon.svg) no-repeat center;
-    mask: url(amazon.svg) no-repeat center;
+    -webkit-mask: url(../icons/amazon.svg) no-repeat center;
+    mask: url(../icons/amazon.svg) no-repeat center;
 }
 
 main .image-grid ul {

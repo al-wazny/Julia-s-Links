@@ -1,106 +1,32 @@
+<?php
+if(!isset($_COOKIE['lang'])) {
+    $_COOKIE['lang'] = 'deutsch';
+}
+
+if($_COOKIE['lang'] === 'deutsch') {    
+    $filedata = file_get_contents('../../assets/translation/de-DE.json');
+} else {
+    $filedata = file_get_contents('../../assets/translation/en-GB.json');
+}
+
+$translation = json_decode($filedata)->contact;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="stylesheet" href="../../assets/styles/contact.css">
     <title>Terminanfrage</title>
-    <style>
-        body {
-            background-color: #e6ab7c;
-        }
-        #contact main h1 {
-            font-size: 4rem;
-            margin-top: 0;
-            margin-bottom: 1rem;
-            padding-top: 3rem;
-        }
-        main > div {
-            margin: 3rem .75rem;
-        }
-        .contact {
-            color: white;
-        }
-        label,
-        p,
-        input {
-            color: black;
-        }
-        form,
-        section {
-            display: flex;
-            flex-direction: column;
-        }
-        form label {
-            margin-top: .5rem;
-            margin-bottom: .5rem;
-        }
-        select {
-            height: 2.15rem;
-        }
-
-        form input:not(ul input) {
-            display: block;
-            height: 1.75rem;
-        }
-        form section {
-            margin-bottom: 1rem;
-        }
-        form > label,
-        section > label {
-            font-weight: 600;
-        }
-        form ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-        }
-        form ul input {
-            width: auto;
-            display: inline;
-        }
-        form ul label {
-            width: 7.5rem;
-            display: inline-block;
-        }
-        form .inspiration {
-            margin-bottom: 1rem;
-            margin-top: .5rem;
-            font-size: 1.25rem;
-            color: black;
-            text-decoration: none;
-        }
-        form button {
-            border-radius: 10px;
-        }
-        .file-upload {
-            padding: .5rem 1rem;
-            width: fit-content;
-        }
-        .submit-appointment {
-            padding: 1rem;
-        }
-        .require-input {
-            display: inline;
-            background-color: transparent;
-            color: red;
-            box-shadow: none;
-        }
-        .additional-info-text {
-            margin-top: .5rem;
-            margin-bottom: 0;
-            font-size: .8rem;
-            font-weight: 300;
-        }
-    </style>
 </head>
 <body id="contact">
     <main>
         <div>
-            <h1>Request an appointment</h1>
+            <h1><?= $translation->appointment ?></h1>
             <div class="contact">
-                <form action="./contact.php" method="post">
+                <form action="./contact-handler.php" method="post">
                     <label for="name">Name <span class="require-input">*</span></label>
                     <section id="name">
                         <input type="text" name="firstName" id="firstName" require>
@@ -187,7 +113,7 @@
             </div>
         </div>
     </main>
-    <?php include("./navigation.html"); ?>
+    <?php include("./pagelets/navigation.php"); ?>
 </body>
 <script>
     function getFile() {
