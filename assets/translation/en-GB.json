@@ -1,5 +1,22 @@
 {
     "contact": {
-        "appointment": "Request an appointment"
+        "appointment": "Request an appointment",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "pronouns": "pronouns",
+        "phoneNumber": "Phone Number",
+        "clientLocation": "Which City do you come from?",
+        "choose": "Please choose",
+        "tattooDescription": "please describe your desired tattoo",
+        "needInspiration": "Do you need inspiration? Click here!",
+        "clientMotive": "You can also send us self made motives!",
+        "tattooPlacement": "Where on your body do you want the tattoo?",
+        "tattooPlacementUnknown": "If you haven't decided yet - no problem! We'll figure it out on the appointment date",
+        "tattooSize": "Desired size of the tattoo",
+        "tattooPerfectSize": "Keep in mind that many tattoos need a minimum size. Again. We choose the perfect size of the tattoo on the appointment (after all, it should also fit your body)",
+        "freeTime": "When do you have time? (day of the week, period of time)",
+        "additionalInfo": "=======JULIA GIBT AN WANN DU ARBEITEST======",
+        "questionSpace": "Space for questions",
+        "submit": "Submit"
     }
 }
