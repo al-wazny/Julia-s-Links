@@ -1,4 +1,5 @@
-<?php 
+<?php
+session_start();
 if ($_SERVER['REQUEST_URI'] == '/view/pages/admin.php'): ?>
     <div>
         <form method='post'>
@@ -9,17 +10,17 @@ if ($_SERVER['REQUEST_URI'] == '/view/pages/admin.php'): ?>
 <?php endif;
 
 if ($_POST['password'] && $_POST['password'] === 'test') {
-    $_COOKIE['isLoggedIn'] = true;
+    $_SESSION['isLoggedIn'] = true;
     $_POST['password'] = '';
 }
 
-if ($_COOKIE['isLoggedIn'] && $_SERVER['REQUEST_URI'] == '/view/pages/admin.php') {
-    $_COOKIE['isLoggedIn'] = true;
+if ($_SESSION['isLoggedIn'] && $_SERVER['REQUEST_URI'] == '/view/pages/admin.php') {
+    $_SESSION['isLoggedIn'] = true;
 } else {
-    $_COOKIE['isLoggedIn'] = false;
+    $_SESSION['isLoggedIn'] = false;
 }
 
-if ($_POST['password'] && $_POST['password'] === 'test'): ?>
+if ($_SESSION['isLoggedIn']): ?>
     <form method="post" enctype="multipart/form-data">
         <input type="file" name="image" id="image">
         <input type="submit" value="submit">
@@ -34,7 +35,7 @@ if ($imageFile) {
 
 $images = glob('../../assets/images/*');
 
-if ($_SERVER['REQUEST_URI'] == '/view/pages/admin.php' && $_COOKIE['isLoggedIn']) {    
+if ($_SERVER['REQUEST_URI'] == '/view/pages/admin.php' && $_SESSION['isLoggedIn']) {    
     foreach($images as $file) {
         echo "<div>";
         echo "<img style='height: 250px; width: auto;' src='$file' />"; 

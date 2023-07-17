@@ -110,6 +110,13 @@ main > .navbar {
 	transform: translateX(0);
 }
 
+.language-select {
+  margin-left: 3rem;
+  font-size: 1.25rem;
+  padding: 0.25em;
+  border-radius: 5px;
+}
+
 .box {
   border-radius: 20px;
   position: absolute; /* change it to fixed if needed */
@@ -273,6 +280,7 @@ main .image-grid ul img {
   height: 100%;
 
 }
+
 
 @keyframes top {
   0% {

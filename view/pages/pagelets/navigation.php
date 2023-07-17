@@ -12,7 +12,7 @@
         <li><a class="routes" href="/view/pages/my-art.php">My Art</a></li>
         <li><a class="routes" href="/view/pages/contact.php">Contact</a></li>
         <div>
-            <select onchange="selectLanguage(this.options[this.selectedIndex].value)">
+            <select class="language-select" onchange="selectLanguage(this.options[this.selectedIndex].value)">
                 <option value="deutsch">Deutsch</option>
                 <option value="english" <?= $_COOKIE['lang'] == 'english' ? 'selected' : '' ?> >English</option>
             </select>
