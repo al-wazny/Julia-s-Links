@@ -20,7 +20,7 @@
                     <li class="scale"><a href="https://www.instagram.com/julia.izabella/?hl=de">Instagram</a></li>
                     <li class="scale"><a href="https://de-de.facebook.com/julia.izabella.7/">Facebook</a></li>
                     <li class="scale"><a href="https://www.tiktok.com/@juliaizabellaa?lang=de-DE">TikTok</a></li>
-                    <li class="scale"><a href="mailto: tattoo@juliaizabella.de">Appointment request</a></li>
+                    <li class="scale"><a href="mailto: requests@juliaizabellatattoos.art">Appointment request</a></li>
                 </ul>
                 <div class="logo-container">
                     <a href="https://www.amazon.de/hz/wishlist/ls/24M8GWPIEH1GW?ref_=wl_share"><div class="logo"></div></a>
