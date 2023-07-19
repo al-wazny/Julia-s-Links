@@ -32,6 +32,6 @@ $headers .= "From: $email" . "\r\n" .
 "Reply-To: $email" . "\r\n" .
 "X-Mailer: PHP/" . phpversion();
 
-mail('ali.al-wazny@flagbit.de', 'Terminanfrage', $message, $headers);
+mail('tattoo@juliaizabella.de', 'Terminanfrage', $message, $headers);
 header('location: /')
 ?>

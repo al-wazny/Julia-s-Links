@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_URI'] == '/view/pages/admin.php'): ?>
     </div>
 <?php endif;
 
-if ($_POST['password'] && $_POST['password'] === 'test') {
+if ($_POST['password'] && md5($_POST['password']) === '45799e111768a90154830dd2863c1c31') {
     $_SESSION['isLoggedIn'] = true;
     $_POST['password'] = '';
 }

@@ -1,5 +1,22 @@
 {
     "contact": {
-        "appointment": "Terminanfrage"
+        "appointment": "Request an appointment",
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "pronouns": "Pronomen",
+        "phoneNumber": "Handynummer",
+        "clientLocation": "Dein momentaner Wohnort",
+        "choose": "Wähle bitte",
+        "tattooDescription": "Beschreibe bitte dein gewünschtes Motiv genauer",
+        "needInspiration": "Du suchst noch nach Inspiration? dann klicke doch mal hier ",
+        "clientMotive": "Bitte füge hier deine referenz bilder hinzu, falls du welche hast!",
+        "tattooPlacement": "Auf welcher Stelle deines körpers willst du dein Tattoo haben?",
+        "tattooPlacementUnknown": "Du hast dich noch nicht entschieden? - kein Problem! das können wir am Tag deines Termines entscheiden",
+        "tattooSize": "Gewünschte Größe deines Tattoos",
+        "tattooPerfectSize": "Beachte bitte dass die meisten Tattoos eine mindestgröße haben müssen.Aber wir entscheiden die perfekte größe deines Tattoos direk an deinem Termin (denn letzendlich soll es zu deinem Köper passen)",
+        "freeTime": "Wie bist du zeitlich flexible? (Wochentag, Uhrzeit)",
+        "additionalInfo": "Am besten von Montag bis Freitag (Wochenende nach Vereinbarung)",
+        "questionSpace": "Falls du noch Fragen hast kannst du sie hier stellen",
+        "submit": "Abschicken"
     }
 }
