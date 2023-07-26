@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lernen Sie Julia kennen, eine talentierte Tätowiererin aus Karlsruhe. Entdecken Sie ihre Tätowierreise und ihre einzigartige Stilmischung, darunter Neotraditional, Traditional, Blackwork und Jugendstil.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
     <link rel="stylesheet" href="../../assets/styles/style.css">
-    <title>Document</title>
+    <title>About Julia - Tattoo Artist and Tattooing Styles</title>
     <style>
         main {
             background-color: pink;
@@ -21,9 +25,6 @@
     </style>
 </head>
 <body>
-    <!-- remove burger menu animation when a page is done loading
-    side nav underline animation
-    language switcher -->
     <main>
         <h1>About me</h1>
         <div>
