@@ -107,4 +107,120 @@ main {
             }
         }
     }
+    .service {
+        border-radius: 1.5rem;
+        background-color: $secondary-color;
+        box-shadow: 0 4px;
+
+        .info-text {
+            gap: 2.5rem;
+
+            h4 > span {
+                background-color: $green;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+footer {
+    .container {
+        border-radius: 25px 25px 0 0;
+        padding: 2rem;
+
+        > div {
+            margin-bottom: 2rem;
+        }
+
+        .logo > img {
+            height: 55px;
+            width: auto;
+        }
+
+        ul {
+            gap: 1.5rem;
+    
+            li > a {
+                color: white;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+
+                > .fa {
+                    color: #292A32;
+                    background-color: white;
+                    display: inline-block;
+                    border-radius: 60px;
+                    padding: 0.25em 0.3em;
+
+                }
+                .fa-facebook {
+                    padding: 0.25em 0.475em;
+                }
+            }
+        }
+
+        h4 > span {
+            background-color: $green;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 4px;
+            margin-bottom: 1rem;
+        }
+        
+        .contact {
+
+            p {
+                color: white;
+                margin: 0;
+
+                + p {
+                    margin: .75rem 0;
+                }
+            }
+
+
+        }
+
+        .newsletter-sub-form {
+            background-color: #292A32;
+            border-radius: 8px;
+            padding: 2rem 1.5rem;
+
+            .col {
+                width: 100%;
+
+                input, button {
+                    padding: 12px 20px;
+
+                    @media (min-width: 992px) and (max-width: 1200px) {
+                        font-size: .875rem;
+                    }
+                }
+
+                .form-control {
+                    color: white;
+                    border: 1px solid white;
+                    background-color: transparent;
+                }
+
+                .btn-primary {
+                    background-color: $green;
+                    border: 1px solid $green;
+                    color: black;
+                }
+            }
+        }
+
+        hr {
+            background-color: white;
+            height: 1px;
+            width: 100%;
+            margin: 0;
+
+            + div {
+                color: white;
+                margin-top: 2rem;
+            }
+        }
+    }
 }

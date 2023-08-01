@@ -90,4 +90,96 @@ main .contact .contact-illustration {
     margin-right: 2rem;
     margin-left: auto;
   }
+}
+main .service {
+  border-radius: 1.5rem;
+  background-color: #F3F3F3;
+  box-shadow: 0 4px;
+}
+main .service .info-text {
+  gap: 2.5rem;
+}
+main .service .info-text h4 > span {
+  background-color: #B9FF66;
+  border-radius: 4px;
+}
+
+footer .container {
+  border-radius: 25px 25px 0 0;
+  padding: 2rem;
+}
+footer .container > div {
+  margin-bottom: 2rem;
+}
+footer .container .logo > img {
+  height: 55px;
+  width: auto;
+}
+footer .container ul {
+  gap: 1.5rem;
+}
+footer .container ul li > a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+footer .container ul li > a > .fa {
+  color: #292A32;
+  background-color: white;
+  display: inline-block;
+  border-radius: 60px;
+  padding: 0.25em 0.3em;
+}
+footer .container ul li > a .fa-facebook {
+  padding: 0.25em 0.475em;
+}
+footer .container h4 > span {
+  background-color: #B9FF66;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 4px;
+  margin-bottom: 1rem;
+}
+footer .container .contact p {
+  color: white;
+  margin: 0;
+}
+footer .container .contact p + p {
+  margin: 0.75rem 0;
+}
+footer .container .newsletter-sub-form {
+  background-color: #292A32;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+}
+footer .container .newsletter-sub-form .col {
+  width: 100%;
+}
+footer .container .newsletter-sub-form .col input, footer .container .newsletter-sub-form .col button {
+  padding: 12px 20px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  footer .container .newsletter-sub-form .col input, footer .container .newsletter-sub-form .col button {
+    font-size: 0.875rem;
+  }
+}
+footer .container .newsletter-sub-form .col .form-control {
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+}
+footer .container .newsletter-sub-form .col .btn-primary {
+  background-color: #B9FF66;
+  border: 1px solid #B9FF66;
+  color: black;
+}
+footer .container hr {
+  background-color: white;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+}
+footer .container hr + div {
+  color: white;
+  margin-top: 2rem;
 }/*# sourceMappingURL=index.css.map */
