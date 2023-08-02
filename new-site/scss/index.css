@@ -99,8 +99,14 @@ main .process {
   margin-bottom: 2rem;
   background-color: #F3F3F3;
 }
-main .process.expanded {
+main .process .toggle-collapse > .fa::before {
+  content: "\f067";
+}
+main .process:has(.collapse.show) {
   background-color: #B9FF66;
+}
+main .process:has(.collapse.show) .toggle-collapse > .fa::before {
+  content: "\f068";
 }
 main .process .process-step {
   font-size: 2.5rem;

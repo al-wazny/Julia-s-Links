@@ -89,41 +89,45 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="container">
             <h3>Our Working Process</h3>
-            <div class="container">
+            <div id="working-process">
                 <div class="process expanded">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between" id="headingOne">
                         <div class="d-flex flex-column flex-md-row align-items-center">
                             <div class="process-step mr-auto mr-md-2">01</div>
                             <h4 class="process-title m-0">Consultation</h4>
                         </div>
                         <div class="toggle-collapse d-flex align-items-center">
-                            <!-- <span class="fa fa-plus"></span> -->
-                            <span class="fa fa-minus"></span>
+                            <span type="button" class="fa" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></span>
                         </div>
                     </div>
-                    <hr>
-                    <div class="process-description">
-                        <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                    <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#working-process">
+                        <hr>
+                        <div class="process-description">
+                            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="process">
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex flex-column flex-md-row  align-items-center">
+
+                <div class="process expanded">
+                    <div class="d-flex justify-content-between" id="headingTwo">
+                        <div class="d-flex flex-column flex-md-row align-items-center">
                             <div class="process-step mr-auto mr-md-2">02</div>
                             <h4 class="process-title m-0">Research and Strategy Development</h4>
                         </div>
                         <div class="toggle-collapse d-flex align-items-center">
-                            <span class="fa fa-plus"></span>
-                            <!-- <span class="fa fa-minus"></span> -->
+                            <span type="button" class="fa" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"></span>
                         </div>
                     </div>
-                    <!-- <hr>
-                    <div class="process-description">
-                        <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
-                    </div> -->
+                    <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#working-process">
+                        <hr>
+                        <div class="process-description">
+                            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
         <section>
