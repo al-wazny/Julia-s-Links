@@ -91,6 +91,27 @@ main .contact .contact-illustration {
     margin-left: auto;
   }
 }
+main .process {
+  border-radius: 25px;
+  border: 1px solid black;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px;
+  margin-bottom: 2rem;
+  background-color: #F3F3F3;
+}
+main .process.expanded {
+  background-color: #B9FF66;
+}
+main .process .process-step {
+  font-size: 2.5rem;
+}
+main .process .toggle-collapse .fa {
+  border: 1px solid black;
+  background-color: white;
+  display: inline-block;
+  border-radius: 60px;
+  padding: 0.635em 0.75em;
+}
 main .service {
   border-radius: 1.5rem;
   background-color: #F3F3F3;

@@ -107,6 +107,32 @@ main {
             }
         }
     }
+    .process {
+        border-radius: 25px;
+        border: 1px solid black;
+        padding: 1.5rem 2rem;
+        box-shadow: 0 4px;
+        margin-bottom: 2rem;
+        background-color: $secondary-color;
+        
+        &.expanded {
+            background-color: $green;
+        }
+
+        .process-step {
+            font-size: 2.5rem;
+        }
+
+        .toggle-collapse {
+            .fa {
+                border: 1px solid black;
+                background-color: white;
+                display: inline-block;
+                border-radius: 60px;
+                padding: .635em .75em;
+            }
+        }
+    }
     .service {
         border-radius: 1.5rem;
         background-color: $secondary-color;
