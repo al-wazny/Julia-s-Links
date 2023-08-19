@@ -4,12 +4,12 @@
             <div class="info-text w-50 d-flex flex-column justify-content-between">
                 <h4><span><?= $title ?></span></h4>
                 <div class="d-flex">
-                    <img src="../../../assets/illustration/Icon.png" alt="">
+                    <img src="assets/illustration/Icon.png" alt="">
                     <p class="ml-2 my-auto text-center">Learn more</p>
                 </div>
             </div>
             <div class="w-50 d-flex align-items-center justify-content-center">
-                <img src="../../../assets/illustration/tokyo-magnifier-web-search-with-elements 2.png" alt="">
+                <img src="assets/illustration/tokyo-magnifier-web-search-with-elements 2.png" alt="">
             </div>
         </div>
     </div>

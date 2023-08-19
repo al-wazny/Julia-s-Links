@@ -1,7 +1,7 @@
 <?php function navigation() { ?>
     <nav class="navbar navbar-expand-lg container d-flex justify-content-between mt-md-3">
         <a class="navbar-brand" href="/">
-            <img src="../../../assets/illustration//Selection_002.png" alt="brand logo">
+            <img src="assets/illustration//Selection_002.png" alt="brand logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

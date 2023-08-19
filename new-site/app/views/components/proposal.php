@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="col text-right d-none d-md-block">
-                <img class="w-auto mr-5" src="../../../assets/illustration/Illustration2.png" alt="">
+                <img class="w-auto mr-5" src="assets/illustration/Illustration2.png" alt="">
             </div>
         </div>
     </div>

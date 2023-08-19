@@ -6,7 +6,7 @@
             <button class="btn btn-dark mt-3 p-3 mx-auto ml-md-0 d-block">Book a consultation</button>
         </div>
         <div class="intro-illustration">
-            <img class="" src="../../../assets/illustration/Illustration.png" alt="">
+            <img class="" src="assets/illustration/Illustration.png" alt="">
         </div>
     </div>
 <?php } ?>
