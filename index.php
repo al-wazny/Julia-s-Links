@@ -1,2 +1,5 @@
 <?php
-header("location: view/pages");
+
+require_once './app/boostrap.php';
+
+new Core();
