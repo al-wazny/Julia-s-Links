@@ -10,7 +10,7 @@ class landingpageLoader {
     //     $this->db = new Database();
     // }
 
-    public function index() {
+    public function load() {
         return 'hello world';
     }
 }

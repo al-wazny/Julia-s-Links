@@ -20,7 +20,7 @@ class Database {
 
         // Create MYSQLI instance
         try {
-            $this->connection = new mysqli($this->host, $this->user, $this->pass, $this->dbname);
+            $this->connection = new mysqli($this->host, $this->user, $this->pass, $this->dbname, 33060);
         } catch (Exception $e) { // Catches Exception if it is thrown
             $this->err = $e->getMessage();
             echo $this->err;

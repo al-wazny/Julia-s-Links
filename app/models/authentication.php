@@ -10,10 +10,6 @@ class authentication {
         $this->db = new Database();
     }
 
-    public function index() {
-        return 'hello world';
-    }
-
     public function checkAdminCredentials() 
     {
         if (!$this->cookiesAllowed()) {
@@ -61,7 +57,7 @@ class authentication {
 
     //? maybe this would make more sense to put it inside the DB class
     private function bindAndFetchUser($col, $value) {
-        $this->db->prepare("SELECT * FROM `user_accounts` WHERE `$col`=?");
+        $this->db->prepare("SELECT * FROM `user_account` WHERE `$col`=?");
         $this->db->bind('s', $value);
         $this->db->exec();
         $result = $this->db->getResult();
@@ -84,7 +80,7 @@ class authentication {
 
     private function updateDbToken($token) {
         $username = $this->user['username'];
-        $sql = "UPDATE `user_accounts` SET token='$token' WHERE username='$username'";
+        $sql = "UPDATE `user_account` SET token='$token' WHERE username='$username'";
 
         $this->db->insert($sql);
     }

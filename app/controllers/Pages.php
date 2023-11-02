@@ -2,20 +2,23 @@
 
 class Pages extends Controller {
 
-    private $pagesModel;
+    private $ladingpageLoader;
+
+    private $adminpageLoader;
 
     private $authModel;
 
     public function __construct()
     {
-        $this->pagesModel = $this->model('landingpageLoader');
+        $this->ladingpageLoader = $this->model('landingpageLoader');
+        $this->adminpageLoader = $this->model('adminpageLoader');
         $this->authModel = $this->model('authentication');
     }
 
     public function index()
     {
         $data = [
-            'page' => 'hello world',
+            'page' => $this->ladingpageLoader->load(),
         ];
 
         return $this->view('pages/landingpage', $data);
@@ -28,6 +31,8 @@ class Pages extends Controller {
         if (isset($data['error'])) {
             return $this->view('pages/adminLogin', $data);
         }
+
+        $data = $this->adminpageLoader->load();
 
         return $this->view('pages/admin', $data);
     }
